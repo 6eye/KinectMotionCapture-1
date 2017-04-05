@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="AnimationTest.Window">
+    <Position X="16.75" Y="8.5" Width="4.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="LKinectStatus" Hidden="true" />
+      <Field Name="LKinectTracking" Hidden="true" />
+      <Field Name="menu" Hidden="true" />
+      <Field Name="menu_animload" Hidden="true" />
+      <Field Name="menu_animsave" Hidden="true" />
+      <Field Name="menu_modelload" Hidden="true" />
+      <Field Name="menu_modelmaterial" Hidden="true" />
+      <Method Name="OnCreateControl" Hidden="true" />
+      <Method Name="OnIdle" Hidden="true" />
+      <Method Name="OnPaint" Hidden="true" />
+      <Field Name="tabControl1" Hidden="true" />
+      <Field Name="tabPage1" Hidden="true" />
+      <Field Name="tabPage3" Hidden="true" />
+      <Field Name="toolStripSeparator2" Hidden="true" />
+      <Method Name="Window" Hidden="true" />
+    </Members>
+    <AssociationLine Name="AnimationManager" Type="AnimationTest.KAnimation">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.274" Y="8.069" Height="0.182" Width="1.444" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="SensorManager" Type="AnimationTest.KKinect" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.25" Y="9.234" />
+        <Point X="27.375" Y="9.234" />
+        <Point X="27.375" Y="18.938" />
+        <Point X="27.75" Y="18.938" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="5.082" Y="9.785" Height="0.182" Width="1.31" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="model" Type="AnimationTest.KModel" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.75" Y="11.104" />
+        <Point X="15.188" Y="11.104" />
+        <Point X="15.188" Y="13.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.438" Y="2.515" Height="0.182" Width="0.731" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="BonePanel" Type="AnimationTest.BoneInfoPanel" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.25" Y="9.56" />
+        <Point X="24.889" Y="9.56" />
+        <Point X="24.889" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="2.463" Y="4.757" Height="0.182" Width="1.076" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="KinectPanel" Type="AnimationTest.KinectPanel" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.25" Y="11.578" />
+        <Point X="24.806" Y="11.57" Type="JumpStart" />
+        <Point X="24.972" Y="11.569" Type="JumpEnd" />
+        <Point X="27.292" Y="11.564" Type="JumpStart" />
+        <Point X="27.458" Y="11.563" Type="JumpEnd" />
+        <Point X="28" Y="11.562" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="5.54" Y="-0.31" Height="0.182" Width="1.097" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="AnimPanel" Type="AnimationTest.AnimationPanel">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.121" Y="0.058" Height="0.182" Width="0.885" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="RenderingPanel" Type="AnimationTest.RenderPanel">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.456" Y="0.108" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CACMIIgJICkEQRAAACGAMCgCgAgggAABCAEAAgAJBAw=</HashCode>
+      <FileName>GUI\MainWindow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="AnimationManager" />
+      <Field Name="SensorManager" />
+      <Field Name="model" />
+      <Field Name="BonePanel" />
+      <Field Name="KinectPanel" />
+      <Field Name="AnimPanel" />
+      <Field Name="RenderingPanel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnimationTest.RenderPanel">
+    <Position X="10" Y="8.5" Width="4" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FPSLabel" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="RenderWnd" Hidden="true" />
+      <Field Name="toolStrip1" Hidden="true" />
+      <Field Name="toolStripButton2" Hidden="true" />
+      <Field Name="toolStripButton3" Hidden="true" />
+      <Field Name="toolStripLabel1" Hidden="true" />
+      <Field Name="toolStripLabel2" Hidden="true" />
+      <Field Name="toolStripSeparator2" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Renderer" Type="AnimationTest.KRenderer" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="9.562" />
+        <Point X="9.625" Y="9.562" />
+        <Point X="9.625" Y="9.563" />
+        <Point X="8.75" Y="9.563" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.382" Y="0.044" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="gizmo" Type="AnimationTest.KGizmo" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="12.3" />
+        <Point X="11" Y="16.866" />
+        <Point X="10.5" Y="16.866" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.301" Y="4.232" Height="0.182" Width="0.623" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="grid" Type="AnimationTest.KGrid" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="11.5" />
+        <Point X="9.062" Y="11.5" />
+        <Point X="9.062" Y="14.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.855" Y="3.36" Height="0.182" Width="0.5" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="mesh" Type="AnimationTest.KModel">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.701" Y="0.871" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgAAAIhAACoBEgAAAECIABgCAABBAECABQCAAAAAAEA=</HashCode>
+      <FileName>Renderer\RenderPanel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Renderer" />
+      <Field Name="gizmo" />
+      <Field Name="grid" />
+      <Field Name="mesh" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnimationTest.KGizmo">
+    <Position X="7.5" Y="16.25" Width="3" />
+    <InheritanceLine Type="AnimationTest.KMesh" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="18" />
+        <Point X="6.75" Y="16.938" />
+        <Point X="7.5" Y="16.938" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mesh\KGizmo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationTest.KGrid">
+    <Position X="7.25" Y="14.75" Width="3.25" />
+    <InheritanceLine Type="AnimationTest.KMesh" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.375" Y="18" />
+        <Point X="6.375" Y="15.312" />
+        <Point X="7.25" Y="15.312" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mesh\KGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationTest.KModel">
+    <Position X="11.25" Y="13.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>BBIAAAkAAAAAAhAAAgAIOACAAAAWEgAEABAAAAAAAAE=</HashCode>
+      <FileName>Mesh\KModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationTest.KMesh">
+    <Position X="5.5" Y="18" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAACEACAAgAACAAAAAAAAAAAAgAAAAAAAAAAEAA=</HashCode>
+      <FileName>Mesh\KMesh.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationTest.KMeshHelper">
+    <Position X="8.25" Y="19.5" Width="8" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mesh\KMeshHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationTest.KKinect">
+    <Position X="27.75" Y="18" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFAABAQgAIAABAQAAAAMAgAIAAAIhwEACAABA=</HashCode>
+      <FileName>Kinect\KKinect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationTest.KinectPanel">
+    <Position X="28" Y="11.25" Width="4.5" />
+    <Members>
+      <Field Name="button1" Hidden="true" />
+      <Field Name="button2" Hidden="true" />
+      <Field Name="button3" Hidden="true" />
+      <Field Name="button4" Hidden="true" />
+      <Field Name="button5" Hidden="true" />
+      <Field Name="comboBox1" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="CorrectionBar" Hidden="true" />
+      <Field Name="DepthModeBox" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="ElevationAngleBar" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="JitterRadiusBar" Hidden="true" />
+      <Field Name="KinectBasic" Hidden="true" />
+      <Field Name="KinectElevation" Hidden="true" />
+      <Method Name="KinectPanel" Hidden="true" />
+      <Field Name="KinectSmooth" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label7" Hidden="true" />
+      <Field Name="label8" Hidden="true" />
+      <Field Name="LCorrection" Hidden="true" />
+      <Field Name="LElevation" Hidden="true" />
+      <Field Name="LJitterRadius" Hidden="true" />
+      <Field Name="LMaxDeviationRadius" Hidden="true" />
+      <Field Name="LPrediction" Hidden="true" />
+      <Field Name="LSmoothing" Hidden="true" />
+      <Field Name="MaxDeviationRadiusBar" Hidden="true" />
+      <Field Name="pictureBox1" Hidden="true" />
+      <Field Name="PredictionBar" Hidden="true" />
+      <Field Name="SmoothBar" Hidden="true" />
+      <Field Name="TrackingModeBox" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Sensor" Type="AnimationTest.KKinect">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.189" Y="0.11" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIAIAAhAASIABhAQgBCEKFUCQOA4QICAiMIDAABCAAU=</HashCode>
+      <FileName>Kinect\KinectPanel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Sensor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnimationTest.KKinectHelper">
+    <Position X="21.75" Y="20.25" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAABIAAACAABAEAAAAIAgABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kinect\KKinectHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationTest.BoneInfoPanel">
+    <Position X="22.25" Y="14.25" Width="4.75" />
+    <Members>
+      <Field Name="all_nodes" Hidden="true" />
+      <Field Name="BoneConnections" Hidden="true" />
+      <Field Name="BoneTree" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="groupBox1" Hidden="true" />
+      <Field Name="groupBox2" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="JointRotation" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="LJoint" Hidden="true" />
+      <Field Name="LOffset" Hidden="true" />
+      <Field Name="LRoot" Hidden="true" />
+      <Field Name="LRotation" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEQACAABACAgABIAgACAAAIGAARAASAACCAAAACKAAA=</HashCode>
+      <FileName>Kinect\BoneInfoPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationTest.AnimationPanel">
+    <Position X="17" Y="13" Width="4.25" />
+    <Members>
+      <Field Name="AnimNameLabel" Hidden="true" />
+      <Field Name="BPause" Hidden="true" />
+      <Field Name="BPlay" Hidden="true" />
+      <Field Name="BRecord" Hidden="true" />
+      <Field Name="BStop" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="LActualFrame" Hidden="true" />
+      <Field Name="LActualTime" Hidden="true" />
+      <Field Name="LAnimName" Hidden="true" />
+      <Field Name="LoopCheck" Hidden="true" />
+      <Field Name="TimelineBar" Hidden="true" />
+    </Members>
+    <AssociationLine Name="AnimationManager" Type="AnimationTest.KAnimation">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.491" Y="0.06" Height="0.182" Width="1.389" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgAEABAJAGVACAAAACGBAAACAABAEASAAIiEAAQACQA=</HashCode>
+      <FileName>Animation\AnimationPanel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="AnimationManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnimationTest.KAnimation">
+    <Position X="17.25" Y="17.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AASgAAAAAQQYAAAACgBABAAIIAQAgAAA6ChAoAAARCA=</HashCode>
+      <FileName>Animation\KAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationTest.KMath">
+    <Position X="23" Y="18" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAQAAAAAAAEAAAAAAEAAA=</HashCode>
+      <FileName>Core\KMath.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationTest.KFile">
+    <Position X="10" Y="21.5" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAABAEAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\KFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationTest.KFileHelper">
+    <Position X="5.5" Y="21.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAEAAABAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\KFileHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationTest.KTimer">
+    <Position X="28.75" Y="8.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAABAAACAAAAAAAAEAAAAAAAAAAAAACAgAAAAAABAAA=</HashCode>
+      <FileName>Core\KTimer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationTest.KCamera">
+    <Position X="5.5" Y="11" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAFJAABAAAEAAAAACAEAABAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Renderer\KCamera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimationTest.KRenderer">
+    <Position X="5.5" Y="8.5" Width="3.25" />
+    <AssociationLine Name="Camera" Type="AnimationTest.KCamera" FixedFromPoint="true">
+      <Path>
+        <Point X="6.75" Y="10.632" />
+        <Point X="6.75" Y="11" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.814" Y="0.133" Height="0.182" Width="0.711" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gAACAAACAAAAAAAAAAABAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Renderer\KRenderer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Camera" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

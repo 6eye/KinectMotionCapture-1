@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C91E394E-F06D-4729-9004-D0CE2A867F2D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AnimationTest</RootNamespace>
+    <AssemblyName>KMC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Kinect, Version=1.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\KFileHelper.cs" />
+    <Compile Include="Core\KFile.cs" />
+    <Compile Include="Animation\AnimNameWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Animation\AnimNameWindow.Designer.cs">
+      <DependentUpon>AnimNameWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\RotationHelper.cs" />
+    <Compile Include="Mesh\KMesh.cs" />
+    <Compile Include="Renderer\RenderPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Renderer\RenderPanel.Designer.cs">
+      <DependentUpon>RenderPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Renderer\KCamera.cs" />
+    <Compile Include="Core\DataStruct.cs" />
+    <Compile Include="Mesh\KGizmo.cs" />
+    <Compile Include="Mesh\KGrid.cs" />
+    <Compile Include="Animation\KAnimation.cs" />
+    <Compile Include="Kinect\KKinect.cs" />
+    <Compile Include="Kinect\KKinectHelper.cs" />
+    <Compile Include="Core\KMath.cs" />
+    <Compile Include="Mesh\KMeshHelper.cs" />
+    <Compile Include="Mesh\KModel.cs" />
+    <Compile Include="Renderer\KRenderer.cs" />
+    <Compile Include="Core\KTimer.cs" />
+    <Compile Include="Kinect\BoneInfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Kinect\BoneInfoPanel.Designer.cs">
+      <DependentUpon>BoneInfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kinect\KinectPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Kinect\KinectPanel.Designer.cs">
+      <DependentUpon>KinectPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Animation\AnimationPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Animation\AnimationPanel.Designer.cs">
+      <DependentUpon>AnimationPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KMC.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Animation\AnimNameWindow.resx">
+      <DependentUpon>AnimNameWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kinect\BoneInfoPanel.resx">
+      <DependentUpon>BoneInfoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kinect\KinectPanel.resx">
+      <DependentUpon>KinectPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renderer\RenderPanel.resx">
+      <DependentUpon>RenderPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Animation\AnimationPanel.resx">
+      <DependentUpon>AnimationPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Diagram_klas.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\record1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
